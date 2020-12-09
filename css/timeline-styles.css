@@ -12,8 +12,14 @@ iframe {
 }
 
 a {
+  text-align: center;
   text-decoration: none;
-  color: #FFFFFF;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
