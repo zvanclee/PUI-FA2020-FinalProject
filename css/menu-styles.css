@@ -19,7 +19,9 @@ img {
   background-color: #6F2232;
   border: none;
   color: #FFFFFF;
-  padding: 15px 32px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
