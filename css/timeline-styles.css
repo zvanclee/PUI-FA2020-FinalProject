@@ -31,6 +31,9 @@ p {
   overflow-wrap: break-word;
 }
 
+#top-nav-option {
+  margin-top: 60px;
+}
 a {
   font-family: 'Bebas Neue', cursive;
   color: #FFFFFF;
@@ -39,7 +42,7 @@ a {
   display: inline-block;
   font-size: 48px;
   margin-left: 20px;
-  margin-top: 60px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
