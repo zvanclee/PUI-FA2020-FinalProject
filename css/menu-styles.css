@@ -7,6 +7,10 @@ html, body {
   font-style: normal;
 }
 
+p {
+  color: white;
+}
+
 #screen-button {
   background-color: #6F2232;
   border: none;
