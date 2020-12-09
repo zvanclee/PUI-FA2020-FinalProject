@@ -11,6 +11,11 @@ iframe {
   margin-top: 200px;
 }
 
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 767px) {
   .row.content {height: auto;}
 }
