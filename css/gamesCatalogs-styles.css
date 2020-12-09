@@ -8,3 +8,44 @@ html, body {
   font-family: Avenir;
   font-style: normal;
 }
+
+img {
+  margin-top: 60px;
+}
+
+#arrow {
+  margin-top: 0px;
+}
+
+p {
+  font-family: 'Bebas Neue', cursive;
+  color: #FFFFFF;
+  font-size: 42px;
+}
+
+#top-nav-option {
+  margin-top: 50px;
+}
+
+a {
+  font-family: 'Bebas Neue', cursive;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 48px;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #C3073F;
+  transition: all .5s;
+}
+
+@media screen and (max-width: 767px) {
+  .row.content {
+    height: auto;
+  }
+}
