@@ -7,6 +7,10 @@ html, body {
   font-style: normal;
 }
 
+iframe {
+  margin-top: 200px;
+}
+
 @media screen and (max-width: 767px) {
   .row.content {height: auto;}
 }
