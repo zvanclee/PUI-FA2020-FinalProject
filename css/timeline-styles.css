@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #000000;
+  font-family: Avenir;
+  font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;}
+}
