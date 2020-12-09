@@ -2,10 +2,6 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-image: url("../images/nd-menu-logo.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   background-color: #000000;
   font-family: Avenir;
   font-style: normal;
@@ -28,4 +24,12 @@ html, body {
 #screen-button:hover {
   border-color: #C3073F;
   transition: all .5s;
+}
+
+.button-container {
+  position: fixed;
+  display: inline-block;
+  margin-top: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
 }
