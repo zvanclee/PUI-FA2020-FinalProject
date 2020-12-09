@@ -15,6 +15,10 @@ iframe {
   margin-right: auto;
 }
 
+img {  
+  margin-top: 40px;
+}
+
 a {
   font-family: 'Bebas Neue', cursive;
   color: #FFFFFF;
