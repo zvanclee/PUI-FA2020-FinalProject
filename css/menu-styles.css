@@ -12,6 +12,7 @@ img {
 }
 
 #screen-button {
+  font-family: 'Bebas Neue', cursive;
   background-color: #6F2232;
   border: none;
   color: #FFFFFF;
@@ -19,7 +20,7 @@ img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
   margin-left: 20px;
   margin-top: 40px;
   border-radius: 8px;
