@@ -9,6 +9,11 @@ html, body {
   font-style: normal;
 }
 
+
+.row {
+  overflow: hidden
+}
+
 img {
   margin: 80px;
 }
