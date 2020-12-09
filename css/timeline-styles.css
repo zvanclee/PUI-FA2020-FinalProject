@@ -10,14 +10,14 @@ html, body {
 }
 
 iframe {
-  margin-top: 75px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 img {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 #arrow {
