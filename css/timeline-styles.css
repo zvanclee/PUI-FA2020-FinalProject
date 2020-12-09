@@ -34,6 +34,7 @@ p {
 #top-nav-option {
   margin-top: 50px;
 }
+
 a {
   font-family: 'Bebas Neue', cursive;
   color: #FFFFFF;
@@ -52,5 +53,7 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .row.content {height: auto;}
+  .row.content {
+    height: auto;
+  }
 }
