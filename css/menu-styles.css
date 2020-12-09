@@ -1,13 +1,19 @@
-.img {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url("../images/nd-menu-logo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000000;
+  font-family: Avenir;
+  font-style: normal;
 }
 
-.button {
+#screen-button {
   background-color: #6F2232;
-  border-style: solid;
-  border-color: #C3073F;
+  border: none;
   color: #FFFFFF;
   padding: 15px 32px;
   text-align: center;
@@ -15,5 +21,11 @@
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+#screen-button:hover {
+  border-color: #C3073F;
+  transition: all .5s;
 }
