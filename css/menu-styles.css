@@ -31,6 +31,6 @@ img {
 }
 
 #screen-button:hover {
-  border-color: #C3073F;
+  background-color: #C3073F;
   transition: all .5s;
 }
