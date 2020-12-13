@@ -1,5 +1,5 @@
 //Get the button
-var mybutton = document.getElementById("backToTop-button");
+var mybutton = document.getElementById("backToTop-button").style.display='block';
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
