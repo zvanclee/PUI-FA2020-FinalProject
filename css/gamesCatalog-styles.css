@@ -53,7 +53,7 @@ a:hover {
 }
 
 .card {
-  margin-bottom: 15px;
+  background-color: orange;
 }
 
 .card-text {
