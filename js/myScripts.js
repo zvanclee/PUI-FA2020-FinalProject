@@ -1,40 +1,65 @@
-$(document).ready(function(){
-  $('.carousel').slick({
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots:true,
-    centerMode: true,
-    responsive: [{
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        // centerMode: true,
+var cardSpaces=15;
+var middleDistance = 200;
 
-      }
+	var nxtVal=middleDistance ;
+	middleDistance-=cardSpaces;
+	$(".next").each(function(){
+		$(this).attr("elad-translate",nxtVal);
+		$(this).css("transform","translateX(calc(-50% + "+nxtVal+"px)) rotateY(-70deg) skewY(9deg)");
+		nxtVal+=cardSpaces;
+	});
 
-    }, {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        dots: true,
-        infinite: true,
+$("#navright").click(function(){
+	if($(".active").next().hasClass("slideItems"))
+	{
+		$(".active").removeClass("active")
+			.addClass("prev")
+			.attr("elad-translate",middleDistance)
+			.next()
+			.addClass("active")
+			.removeClass("next")
+			.removeAttr("style")
+			.attr("elad-translate","0");
 
-      }
-    },  {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      }
-    }]
-  });
+		$(".next").each(function(){
+			var thisTrans = parseInt($(this).attr("elad-translate"))-cardSpaces;
+			$(this).css("transform","translateX(calc(-50% + "+thisTrans+"px)) rotateY(-70deg) skewY(9deg)");
+			$(this).attr("elad-translate",thisTrans);
+			// nxtVal+=cardSpaces;
+		});
+
+		$(".prev").each(function(){
+			var thisTrans = parseInt($(this).attr("elad-translate"))+cardSpaces;
+			$(this).css("transform","translateX(calc(-50% - "+thisTrans+"px)) rotateY(70deg) skewY(-9deg)");
+			$(this).attr("elad-translate",thisTrans);
+			// nxtVal+=cardSpaces;
+		});
+	}
+});
+$("#navleft").click(function(){
+	if($(".active").prev().hasClass("slideItems"))
+	{
+		$(".active").removeClass("active")
+			.addClass("next")
+			.attr("elad-translate",middleDistance)
+			.prev()
+			.addClass("active")
+			.removeClass("prev")
+			.removeAttr("style")
+			.attr("elad-translate","0");
+
+		$(".next").each(function(){
+			var thisTrans = parseInt($(this).attr("elad-translate"))+cardSpaces;
+			$(this).css("transform","translateX(calc(-50% + "+thisTrans+"px)) rotateY(-70deg) skewY(9deg)");
+			$(this).attr("elad-translate",thisTrans);
+			// nxtVal+=cardSpaces;
+		});
+
+		$(".prev").each(function(){
+			var thisTrans = parseInt($(this).attr("elad-translate"))-cardSpaces;
+			$(this).css("transform","translateX(calc(-50% - "+thisTrans+"px)) rotateY(70deg) skewY(-9deg)");
+			$(this).attr("elad-translate",thisTrans);
+			// nxtVal+=cardSpaces;
+		});
+	}
 });
