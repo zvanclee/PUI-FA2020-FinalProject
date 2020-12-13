@@ -68,3 +68,7 @@ a:hover {
   margin: auto;
   display: block;
 }
+
+.card-title {
+  margin-top: 15px;
+}
