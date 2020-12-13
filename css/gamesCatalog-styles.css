@@ -67,3 +67,27 @@ a:hover {
   color: #C3073F;
   margin-top: 25px;
 }
+
+#backToTop-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: #6F2232;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#backToTop-button:hover {
+  background-color: #C3073F;
+  transition: all .5s;
+}
