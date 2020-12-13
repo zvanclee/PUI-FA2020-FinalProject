@@ -1,17 +1,19 @@
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+// After user scrolls 300 pixels, the 'Back to Top' button will appear
+window.onscroll = function() {scrollCheck()}; // when user scrolls, scrollCheck function is called
+function scrollCheck() {
+    // if user has scrolled 300 pixels from top of screen, the 'Back to Top' button will appear
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.getElementById("backToTopButton").style.display = "block";
-    } else {
+    }
+    // otherwise it will stay hidden
+    else {
         document.getElementById("backToTopButton").style.display = "none";
     }
 }
 
 
-// When the user clicks on the button, scroll to the top of the document
-function backToTopFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera
-    document.documentElement.scrollTop = 0; // For IE and Firefox
+// take user back to top of page after they click 'Back to Top' button
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
