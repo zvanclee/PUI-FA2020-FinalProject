@@ -64,6 +64,7 @@ a:hover {
 }
 
 .card-img {
-  margin-left: auto;
-  margin-right: auto;
+  width: 60%;
+  margin: auto;
+  display: block;
 }
